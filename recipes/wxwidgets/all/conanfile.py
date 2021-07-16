@@ -346,7 +346,8 @@ class wxWidgetsConan(ConanFile):
                               'Security',
                               'ImageIO',
                               'System',
-                              'WebKit']:
+                              'WebKit',
+                              'CoreAnimation']:
                 self.cpp_info.frameworks.append(framework)
         elif self.settings.os == 'Windows':
             # see cmake/init.cmake
